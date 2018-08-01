@@ -1,0 +1,52 @@
+.Header {
+    position: fixed;
+    width: 100%;
+    padding: 50px 0;
+     z-index: 100;  /*The high value in the z-index allows the header to stay on top of everything and a low value, e.g. 1 or 0 allows it to stay at the bottom.*/
+} 
+
+.HeaderGroup {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid; /*sorts the links using rows with spacing*/
+    grid-template-columns: repeat(5, auto); /* Divides the max-width by 5 and allocates equal space to the links with the help of auto. Also uses the spacing provided by dispaly: grid*/
+    align-items: center; /* for aligning items vertically*/
+    justify-items: center; /* justify is for aligning items horizontally*/
+}
+
+.Header a {
+    color: white;
+    font-weight: 700;
+}
+
+.Header button {
+    padding: 8px 20px;
+    font-size: 20px;
+    background: #56CCF2;
+    border: none;
+    font-weight: 700;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.75s;
+}
+
+.Header button:hover {
+    background: white; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); 
+    transform: translateY(-3px);
+}
+
+@media (max-width: 640px) {
+    .Header {
+        padding: 15px 0;
+    }
+
+    .HeaderGroup {
+        grid-template-columns: repeat(4, auto);
+    }
+
+    .Header a:nth-child(4) {
+        display: none;
+    }
+}
