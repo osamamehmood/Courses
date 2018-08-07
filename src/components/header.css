@@ -2,8 +2,8 @@
     position: fixed;
     width: 100%;
     padding: 50px 0;
-     z-index: 100;  /*The high value in the z-index allows the header to stay on top of everything and a low value, e.g. 1 or 0 allows it to stay at the bottom.*/
-     transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    z-index: 100;  /*The high value in the z-index allows the header to stay on top of everything and a low value, e.g. 1 or 0 allows it to stay at the bottom.*/
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 } 
 
 .HeaderScrolled {
