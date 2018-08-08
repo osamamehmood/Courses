@@ -3,6 +3,8 @@ import Link from 'gatsby-link'
 import Card from '../components/card';
 import Section from '../components/section';
 import Wave from '../components/wave';
+import staticdata from '../../staticdata.json';
+import Cell from '../components/cell';
 
 const IndexPage = () => (
     <div>
@@ -60,6 +62,13 @@ const IndexPage = () => (
             title="React for Designers"
             text="Learn how to build a modern site using React and the most efficient libraries to get your site/product online. Get familiar with components, Grid CSS, animations, interactions, dynamic data with Contentful and deploying your site with Netlify." 
         />
+
+        {staticdata.cells.map(cell => (
+            <Cell 
+                title={cell.title} 
+                image={cell.image} 
+            />
+        ))}
     </div>
 )
 
