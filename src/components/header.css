@@ -15,7 +15,7 @@
     max-width: 800px;
     margin: 0 auto;
     display: grid; /*sorts the links using rows with spacing*/
-    grid-template-columns: repeat(5, auto); /* Divides the max-width by 5 and allocates equal space to the links with the help of auto. Also uses the spacing provided by dispaly: grid*/
+    grid-template-columns: repeat(6, auto); /* Divides the max-width by 6 and allocates equal space to the links with the help of auto. Also uses the spacing provided by dispaly: grid*/
     align-items: center; /* for aligning items vertically*/
     justify-items: center; /* justify is for aligning items horizontally*/
 }
@@ -49,7 +49,7 @@
     }
 
     .HeaderGroup {
-        grid-template-columns: repeat(4, auto);
+        grid-template-columns: repeat(5, auto);
     }
 
     .Header a:nth-child(4) {
